@@ -1,67 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Java Script</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>C++</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
-<body>
-    <style>
-        .div{
-            position: absolute;
-            top: 10%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            color: rgb(0, 0, 0);
-            font-size: 24px;
-            text-align: center;
-        }
-        .home {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
 
-        #btn {
-            background-color: #3498db;
-            color: #fff;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 5px;
-            font-size: 16px;
-            cursor: pointer;
-            transition: background-color 0.3s, transform 0.2s;
-        }
+<body style="background-color: #000; color: #fff;">
+  <style>
+    .container {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
 
-        #btn:hover {
-            background-color: #2980b9;
-            transform: scale(1.05);
-        }
-    </style>
-    <div class = "div">
-        <h1>C++</h1>
-    </div>
+    h1 {
+      color: #007bff;
+      /* Blue color */
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+
+    pre {
+      background-color: #333;
+      /* Dark gray background */
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      font-size: 18px;
+      line-height: 1.6;
+      color: #fff;
+      text-align: left;
+    }
+
+    pre h1 {
+      color: #fff;
+      /* White color */
+    }
+
+    .home {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    #btn {
+      background-color: #007bff;
+      /* Blue color */
+      color: #fff;
+      /* White color */
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s, transform 0.2s;
+    }
+
+    #btn:hover {
+      background-color: #0056b3;
+      /* Darker blue color on hover */
+      transform: scale(1.05);
+    }
+  </style>
+  <div class="container">
+    <h1>C++</h1>
     <hr>
-    <br><br>
-    <br>
-    <br>
-    <pre><h1>This is in coming soon </h1></pre>
+    <pre><h1>This is coming soon</h1></pre>
     <div class="home">
-        <button id="btn">HOME</button>
+      <button id="btn">HOME</button>
     </div>
-    <script>
-        const btn = document.getElementById("btn");
-        btn.style.color = "red"
-        btn.style.backgroundColor = "blue"
-        btn.addEventListener("click", () => {
-              function play(){
-     var audio = new Audio('https://assets.mixkit.co/active_storage/sfx/2568/2568-preview.mp3')
-     audio.play();
-   }
-play()
-            window.location.href = "https://acc0855.github.io/codersss/";
-        });
-    </script>
+  </div>
+  <script>
+    const btn = document.getElementById("btn");
+    btn.addEventListener("click", () => {
+      function play() {
+        var audio = new Audio('https://assets.mixkit.co/active_storage/sfx/2568/2568-preview.mp3');
+        audio.play();
+      }
+      play();
+      window.location.href = "https://acc0855.github.io/codersss/";
+    });
+  </script>
 </body>
+
 </html>
